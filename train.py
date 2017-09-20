@@ -5,17 +5,19 @@ from PIL import Image
 import random
 import os
 
+HOME_PATH =  os.environ['HOME']
 
 IMAGE_MUMBER = 5000
-EPOCH = 50
+EPOCH = 20
 BATCH_SIZE = 100
 
 
-IMAGE_TRAIN_PATH = "/home/tuixiang/dataset/pic_num_recognition/train/"
-IMAGE_TEST_PATH = "/home/tuixiang/dataset/pic_num_recognition/test/"
+IMAGE_TRAIN_PATH = HOME_PATH + "/dataset/pic_num_recognition/train/"
+IMAGE_TEST_PATH = HOME_PATH + "/dataset/pic_num_recognition/test/"
 
 
-
+print(IMAGE_TRAIN_PATH)
+print(IMAGE_TEST_PATH)
 
 
 

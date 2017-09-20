@@ -6,14 +6,16 @@ import numpy as np
 import cv2
 
 
+HOME_PATH =  os.environ['HOME']
+
 #训练集路径
-image_path_train = "/home/tuixiang/dataset/pic_num_recognition/train/"
+image_path_train = HOME_PATH +"/dataset/pic_num_recognition/train/"
 if not os.path.exists(image_path_train):
     os.makedirs(image_path_train)
 
 
 #测试集路径
-image_path_test = "/home/tuixiang/dataset/pic_num_recognition/test/"
+image_path_test = HOME_PATH +"/dataset/pic_num_recognition/test/"
 if not os.path.exists(image_path_test):
     os.makedirs(image_path_test)
 
